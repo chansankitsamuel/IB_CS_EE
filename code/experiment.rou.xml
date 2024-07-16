@@ -1,0 +1,341 @@
+<!-- This file controls the inflow/outflow of the vehicles -->
+
+<!-- 
+    In_Nodes: 2, 4, 6
+    Out_Notes: 1, 3, 5
+
+    id format: <period>-<In-Node>-<Out-Node>-<#>
+
+    via edges: 42-43_1/43-42_1, 42-43/43-42, 28-8/8-28, 35-29/30-37, 38-20/23-40
+ -->
+
+<routes>
+    
+    <!-- Non-rush hours: 00:00-7:30 = 0-25000 -->
+
+        <!-- In-Node 2: Total probability = 0.107 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="1-2-1-1" from="2-15" to="10-1" via="42-43_1" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-1-2" from="2-15" to="10-1" via="42-43" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-1-3" from="2-15" to="10-1" via="28-8" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-1-4" from="2-15" to="10-1" via="30-37" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-1-5" from="2-15" to="10-1" via="23-40" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="1-2-3-1" from="2-15" to="15-3" via="42-43_1" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-3-2" from="2-15" to="15-3" via="42-43" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-3-3" from="2-15" to="15-3" via="8-28" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-3-4" from="2-15" to="15-3" via="26-14" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-3-5" from="2-15" to="15-3" via="23-40" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="1-2-5-1" from="2-15" to="21-5" via="42-43_1" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-5-2" from="2-15" to="21-5" via="42-43" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-5-3" from="2-15" to="21-5" via="28-8" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-5-4" from="2-15" to="21-5" via="30-37" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-2-5-5" from="2-15" to="21-5" via="38-20" begin="0" end="25000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 4: Total probability = 0.032 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="1-4-1-1" from="4-17" to="10-1" via="42-43_1" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-1-2" from="4-17" to="10-1" via="42-43" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-1-3" from="4-17" to="10-1" via="28-8" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-1-4" from="4-17" to="10-1" via="26-14" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-1-5" from="4-17" to="10-1" via="23-40" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="1-4-3-1" from="4-17" to="15-3" via="42-43_1" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-3-2" from="4-17" to="15-3" via="42-43" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-3-3" from="4-17" to="15-3" via="28-8" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-3-4" from="4-17" to="15-3" via="29-28" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-3-5" from="4-17" to="15-3" via="23-40" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="1-4-5-1" from="4-17" to="21-5" via="43-42_1" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-5-2" from="4-17" to="21-5" via="43-42" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-5-3" from="4-17" to="21-5" via="28-8" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-5-4" from="4-17" to="21-5" via="28-26" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-4-5-5" from="4-17" to="21-5" via="38-20" begin="0" end="25000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 6: Total probability = 0.076 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="1-6-1-1" from="6-22" to="10-1" via="42-43_1" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-1-2" from="6-22" to="10-1" via="42-43" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-1-3" from="6-22" to="10-1" via="28-8" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-1-4" from="6-22" to="10-1" via="28-26" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-1-5" from="6-22" to="10-1" via="38-20" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="1-6-3-1" from="6-22" to="15-3" via="42-43_1" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-3-2" from="6-22" to="15-3" via="42-43" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-3-3" from="6-22" to="15-3" via="8-28" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-3-4" from="6-22" to="15-3" via="18-27" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-3-5" from="6-22" to="15-3" via="38-20" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="1-6-5-1" from="6-22" to="21-5" via="43-42_1" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-5-2" from="6-22" to="21-5" via="43-42" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-5-3" from="6-22" to="21-5" via="8-28" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-5-4" from="6-22" to="21-5" via="30-37" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="1-6-5-5" from="6-22" to="21-5" via="23-40" begin="0" end="25000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+
+    <!-- Rush hours: 7:30-9:30 = 25001-31666 -->
+
+        <!-- In-Node 2: Total probability = 0.117 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="2-2-1-1" from="2-15" to="10-1" via="42-43_1" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-1-2" from="2-15" to="10-1" via="42-43" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-1-3" from="2-15" to="10-1" via="28-8" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-1-4" from="2-15" to="10-1" via="30-37" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-1-5" from="2-15" to="10-1" via="23-40" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="2-2-3-1" from="2-15" to="15-3" via="42-43_1" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-3-2" from="2-15" to="15-3" via="42-43" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-3-3" from="2-15" to="15-3" via="8-28" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-3-4" from="2-15" to="15-3" via="26-14" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-3-5" from="2-15" to="15-3" via="23-40" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="2-2-5-1" from="2-15" to="21-5" via="42-43_1" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-5-2" from="2-15" to="21-5" via="42-43" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-5-3" from="2-15" to="21-5" via="28-8" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-5-4" from="2-15" to="21-5" via="30-37" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-2-5-5" from="2-15" to="21-5" via="38-20" begin="25001" end="31666" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 4: Total probability = 0.035 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="2-4-1-1" from="4-17" to="10-1" via="42-43_1" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-1-2" from="4-17" to="10-1" via="42-43" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-1-3" from="4-17" to="10-1" via="28-8" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-1-4" from="4-17" to="10-1" via="26-14" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-1-5" from="4-17" to="10-1" via="23-40" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="2-4-3-1" from="4-17" to="15-3" via="42-43_1" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-3-2" from="4-17" to="15-3" via="42-43" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-3-3" from="4-17" to="15-3" via="28-8" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-3-4" from="4-17" to="15-3" via="29-28" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-3-5" from="4-17" to="15-3" via="23-40" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="2-4-5-1" from="4-17" to="21-5" via="43-42_1" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-5-2" from="4-17" to="21-5" via="43-42" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-5-3" from="4-17" to="21-5" via="28-8" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-5-4" from="4-17" to="21-5" via="28-26" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-4-5-5" from="4-17" to="21-5" via="38-20" begin="25001" end="31666" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 6: Total probability = 0.082 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="2-6-1-1" from="6-22" to="10-1" via="42-43_1" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-1-2" from="6-22" to="10-1" via="42-43" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-1-3" from="6-22" to="10-1" via="28-8" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-1-4" from="6-22" to="10-1" via="28-26" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-1-5" from="6-22" to="10-1" via="38-20" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="2-6-3-1" from="6-22" to="15-3" via="42-43_1" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-3-2" from="6-22" to="15-3" via="42-43" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-3-3" from="6-22" to="15-3" via="8-28" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-3-4" from="6-22" to="15-3" via="18-27" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-3-5" from="6-22" to="15-3" via="38-20" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="2-6-5-1" from="6-22" to="21-5" via="43-42_1" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-5-2" from="6-22" to="21-5" via="43-42" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-5-3" from="6-22" to="21-5" via="8-28" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-5-4" from="6-22" to="21-5" via="30-37" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="2-6-5-5" from="6-22" to="21-5" via="23-40" begin="25001" end="31666" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+
+    <!-- Non-rush hours: 9:30-17:30 = 31667-58333 -->
+
+        <!-- In-Node 2: Total probability = 0.107 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="3-2-1-1" from="2-15" to="10-1" via="42-43_1" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-1-2" from="2-15" to="10-1" via="42-43" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-1-3" from="2-15" to="10-1" via="28-8" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-1-4" from="2-15" to="10-1" via="30-37" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-1-5" from="2-15" to="10-1" via="23-40" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="3-2-3-1" from="2-15" to="15-3" via="42-43_1" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-3-2" from="2-15" to="15-3" via="42-43" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-3-3" from="2-15" to="15-3" via="8-28" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-3-4" from="2-15" to="15-3" via="26-14" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-3-5" from="2-15" to="15-3" via="23-40" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="3-2-5-1" from="2-15" to="21-5" via="42-43_1" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-5-2" from="2-15" to="21-5" via="42-43" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-5-3" from="2-15" to="21-5" via="28-8" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-5-4" from="2-15" to="21-5" via="30-37" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-2-5-5" from="2-15" to="21-5" via="38-20" begin="31667" end="58333" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 4: Total probability = 0.032 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="3-4-1-1" from="4-17" to="10-1" via="42-43_1" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-1-2" from="4-17" to="10-1" via="42-43" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-1-3" from="4-17" to="10-1" via="28-8" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-1-4" from="4-17" to="10-1" via="26-14" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-1-5" from="4-17" to="10-1" via="23-40" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="3-4-3-1" from="4-17" to="15-3" via="42-43_1" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-3-2" from="4-17" to="15-3" via="42-43" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-3-3" from="4-17" to="15-3" via="28-8" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-3-4" from="4-17" to="15-3" via="29-28" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-3-5" from="4-17" to="15-3" via="23-40" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="3-4-5-1" from="4-17" to="21-5" via="43-42_1" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-5-2" from="4-17" to="21-5" via="43-42" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-5-3" from="4-17" to="21-5" via="28-8" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-5-4" from="4-17" to="21-5" via="28-26" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-4-5-5" from="4-17" to="21-5" via="38-20" begin="31667" end="58333" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 6: Total probability = 0.076 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="3-6-1-1" from="6-22" to="10-1" via="42-43_1" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-1-2" from="6-22" to="10-1" via="42-43" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-1-3" from="6-22" to="10-1" via="28-8" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-1-4" from="6-22" to="10-1" via="28-26" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-1-5" from="6-22" to="10-1" via="38-20" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="3-6-3-1" from="6-22" to="15-3" via="42-43_1" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-3-2" from="6-22" to="15-3" via="42-43" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-3-3" from="6-22" to="15-3" via="8-28" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-3-4" from="6-22" to="15-3" via="18-27" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-3-5" from="6-22" to="15-3" via="38-20" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="3-6-5-1" from="6-22" to="21-5" via="43-42_1" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-5-2" from="6-22" to="21-5" via="43-42" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-5-3" from="6-22" to="21-5" via="8-28" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-5-4" from="6-22" to="21-5" via="30-37" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="3-6-5-5" from="6-22" to="21-5" via="23-40" begin="31667" end="58333" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+
+
+    <!-- Rush hours: 17:30-19:30 = 58334-65000 -->
+
+        <!-- In-Node 2: Total probability = 0.117 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="4-2-1-1" from="2-15" to="10-1" via="42-43_1" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-1-2" from="2-15" to="10-1" via="42-43" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-1-3" from="2-15" to="10-1" via="28-8" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-1-4" from="2-15" to="10-1" via="30-37" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-1-5" from="2-15" to="10-1" via="23-40" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="4-2-3-1" from="2-15" to="15-3" via="42-43_1" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-3-2" from="2-15" to="15-3" via="42-43" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-3-3" from="2-15" to="15-3" via="8-28" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-3-4" from="2-15" to="15-3" via="26-14" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-3-5" from="2-15" to="15-3" via="23-40" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="4-2-5-1" from="2-15" to="21-5" via="42-43_1" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-5-2" from="2-15" to="21-5" via="42-43" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-5-3" from="2-15" to="21-5" via="28-8" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-5-4" from="2-15" to="21-5" via="30-37" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-2-5-5" from="2-15" to="21-5" via="38-20" begin="58334" end="65000" probability="0.0078" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 4: Total probability = 0.035 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="4-4-1-1" from="4-17" to="10-1" via="42-43_1" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-1-2" from="4-17" to="10-1" via="42-43" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-1-3" from="4-17" to="10-1" via="28-8" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-1-4" from="4-17" to="10-1" via="26-14" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-1-5" from="4-17" to="10-1" via="23-40" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="4-4-3-1" from="4-17" to="15-3" via="42-43_1" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-3-2" from="4-17" to="15-3" via="42-43" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-3-3" from="4-17" to="15-3" via="28-8" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-3-4" from="4-17" to="15-3" via="29-28" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-3-5" from="4-17" to="15-3" via="23-40" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="4-4-5-1" from="4-17" to="21-5" via="43-42_1" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-5-2" from="4-17" to="21-5" via="43-42" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-5-3" from="4-17" to="21-5" via="28-8" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-5-4" from="4-17" to="21-5" via="28-26" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-4-5-5" from="4-17" to="21-5" via="38-20" begin="58334" end="65000" probability="0.00233" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 6: Total probability = 0.082 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.162/3 = 0.054 -->
+                <flow id="4-6-1-1" from="6-22" to="10-1" via="42-43_1" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-1-2" from="6-22" to="10-1" via="42-43" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-1-3" from="6-22" to="10-1" via="28-8" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-1-4" from="6-22" to="10-1" via="28-26" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-1-5" from="6-22" to="10-1" via="38-20" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.073/3 = 0.0243 -->
+                <flow id="4-6-3-1" from="6-22" to="15-3" via="42-43_1" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-3-2" from="6-22" to="15-3" via="42-43" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-3-3" from="6-22" to="15-3" via="8-28" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-3-4" from="6-22" to="15-3" via="18-27" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-3-5" from="6-22" to="15-3" via="38-20" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.061/3 = 0.0203 -->
+                <flow id="4-6-5-1" from="6-22" to="21-5" via="43-42_1" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-5-2" from="6-22" to="21-5" via="43-42" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-5-3" from="6-22" to="21-5" via="8-28" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-5-4" from="6-22" to="21-5" via="30-37" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="4-6-5-5" from="6-22" to="21-5" via="23-40" begin="58334" end="65000" probability="0.00547" departSpeed="max" departPos="base" departLane="best"/>
+
+
+    <!-- Non-rush hours: 19:30-24:00 = 65001-80000 -->
+
+        <!-- In-Node 2: Total probability = 0.107 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="5-2-1-1" from="2-15" to="10-1" via="42-43_1" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-1-2" from="2-15" to="10-1" via="42-43" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-1-3" from="2-15" to="10-1" via="28-8" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-1-4" from="2-15" to="10-1" via="30-37" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-1-5" from="2-15" to="10-1" via="23-40" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="5-2-3-1" from="2-15" to="15-3" via="42-43_1" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-3-2" from="2-15" to="15-3" via="42-43" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-3-3" from="2-15" to="15-3" via="8-28" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-3-4" from="2-15" to="15-3" via="26-14" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-3-5" from="2-15" to="15-3" via="23-40" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="5-2-5-1" from="2-15" to="21-5" via="42-43_1" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-5-2" from="2-15" to="21-5" via="42-43" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-5-3" from="2-15" to="21-5" via="28-8" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-5-4" from="2-15" to="21-5" via="30-37" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-2-5-5" from="2-15" to="21-5" via="38-20" begin="65001" end="80000" probability="0.00714" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 4: Total probability = 0.032 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="5-4-1-1" from="4-17" to="10-1" via="42-43_1" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-1-2" from="4-17" to="10-1" via="42-43" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-1-3" from="4-17" to="10-1" via="28-8" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-1-4" from="4-17" to="10-1" via="26-14" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-1-5" from="4-17" to="10-1" via="23-40" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="5-4-3-1" from="4-17" to="15-3" via="42-43_1" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-3-2" from="4-17" to="15-3" via="42-43" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-3-3" from="4-17" to="15-3" via="28-8" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-3-4" from="4-17" to="15-3" via="29-28" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-3-5" from="4-17" to="15-3" via="23-40" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="5-4-5-1" from="4-17" to="21-5" via="43-42_1" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-5-2" from="4-17" to="21-5" via="43-42" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-5-3" from="4-17" to="21-5" via="28-8" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-5-4" from="4-17" to="21-5" via="28-26" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-4-5-5" from="4-17" to="21-5" via="38-20" begin="65001" end="80000" probability="0.00214" departSpeed="max" departPos="base" departLane="best"/>
+
+        <!-- In-Node 6: Total probability = 0.076 -->
+
+            <!-- Out-Node 1: (Reference) probability = 0.147/3 = 0.049 -->
+                <flow id="5-6-1-1" from="6-22" to="10-1" via="42-43_1" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-1-2" from="6-22" to="10-1" via="42-43" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-1-3" from="6-22" to="10-1" via="28-8" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-1-4" from="6-22" to="10-1" via="28-26" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-1-5" from="6-22" to="10-1" via="38-20" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 3: (Reference) probability = 0.068/3 = 0.0227 -->
+                <flow id="5-6-3-1" from="6-22" to="15-3" via="42-43_1" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-3-2" from="6-22" to="15-3" via="42-43" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-3-3" from="6-22" to="15-3" via="8-28" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-3-4" from="6-22" to="15-3" via="18-27" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-3-5" from="6-22" to="15-3" via="38-20" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+            <!-- Out-Node 5: (Reference) probability = 0.059/3 = 0.0197 -->
+                <flow id="5-6-5-1" from="6-22" to="21-5" via="43-42_1" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-5-2" from="6-22" to="21-5" via="43-42" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-5-3" from="6-22" to="21-5" via="8-28" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-5-4" from="6-22" to="21-5" via="30-37" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+                <flow id="5-6-5-5" from="6-22" to="21-5" via="23-40" begin="65001" end="80000" probability="0.00507" departSpeed="max" departPos="base" departLane="best"/>
+
+</routes>
